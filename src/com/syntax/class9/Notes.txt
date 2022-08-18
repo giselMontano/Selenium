@@ -1,0 +1,4 @@
+SELENIUM CLASS9
+
+PAGINATION: It has many option down to change pages
+   Tables divided into

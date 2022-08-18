@@ -1,0 +1,85 @@
+SELENIUM CLASS 4
+
+CSS SELECTORS (CASCADING STYLE SHEET)
+It is another way of locating elements on the web page.
+Faster and readable
+
+web using
+http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
+https://www.facebook.com/
+
+
+SYNTAX:
+NO slashes.
+
+tag-name[attribute = 'attribute value']
+e.g input[value = 'LOGIN']-->CASE SENSITIVE
+
+CSS does not give us an opportunity to locate the element by its text
+
+SHORTCUTS FOR CSS: check the symbols!!!
+Only for specific attributes
+
+shortcut for CLASSNAME --> .
+SYNTAX==>tag-name.classNameValue
+    e.g. input.button
+
+shortcut for ID--> #
+SYNTAX==>tag-name#idValue
+    e.g input#txtPassword
+
+CONTAINS() METHOD IN CSS:
+* symbol will represent contain method
+Syntax==>tag-name[attribute *= 'partial attribute value']
+     e.g input[placeholder *='phone']
+
+STARTS-WITH METHOD IN CSS:
+^(Circumflex) symbol represent starts method
+Syntax==>tag-name[attribute ^= 'starting attribute value']
+     e.g.input[aria-label^='Pass']
+
+END-WITH METHOD IN CSS:
+$ symbol represents ends-with method in css
+Syntax==>tag-name[attribute $= 'ending attribute value']
+      e.g a[href$='login']-->forgot password in fb
+Ends with is not available in xpaths.
+XPATH VS CSS
+--css cannot locate the elements by text whereas xpath can
+--css has shortcuts
+--xpath does not have ends-with in elements
+--css simpler and readable than xpath
+
+WebElement Commands:
+Consist of several methods where we can perform anaction and get the element state
+on the webpage.
+
+isEnabled()-->boolean
+isDisplayed()-->boolean
+isSelected()-->boolean
+clear()-->void//to clear texts
+getText()-->String
+getAttribute()-->String//gives you the value
+submit()-->void//does not return anything
+
+Task
+Open chrome browser
+Go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”
+Enter valid username and password (username - Admin, password - Hum@nhrm123)
+Click on login button
+Then verify Syntax Logo is displayed. if condition
+
+TC 1: Amazon link count:
+Open chrome browser
+Go to “https://www.amazon.com/”
+Get all links
+Get number of links that has text
+Print to console only the links that has text
+
+HW 2
+HRMS Application Negative Login:
+Open chrome browser
+Go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”
+Enter valid username
+Leave password field empty
+Click on login button
+Verify error message with text “Password cannot be empty” is displayed.

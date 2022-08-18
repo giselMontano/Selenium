@@ -1,0 +1,65 @@
+SELENIUM CLASS1
+
+WHAT IS SOFTWARE TESTING?
+   Identify the correctness and equality of the application
+
+HOW MANY WAYS WE CAN ACTUALLY TEST?
+   Manual
+   Automation
+
+WHEN DO WE GO FOR AUTOMATION TESTING?
+   After manual testing is passed
+   Environment/browser/server must be stable
+   Analyze everything test suite and choose our automation tools
+
+WHAT AUTOMATION TOOLS DO WE KNOW ABOUT?
+   MOST POPULAR [Selenium, Cucumber, TestGN,]
+   NOT THAT POPULAR=>JUnit, Katalon Studio, UFT/QTP(mobile testing), TestComplete(government).
+
+LEVELS OF TESTING:
+   Unit testing->Dev.
+   Integration testing->QA/Testers.
+   Acceptance testing->Clients/QA can also do this.
+   System testing->DevOps team.
+
+TYPE OF TESTING?
+   Functional testing->QA
+   Non-functional testing->User capacity load
+          Performance testing-> How good your app will worK in a severe/load situation=>DONE BY> Performance tester
+          Security testing->How easy your app is to hake.=>Cyber-security team.
+
+WHAT IS SELENIUM: It is set of tools, use everywhere when you see automation testing.
+                  Automate only web application.
+
+SELENIUM COMPONENTS: 4 components-->WebDriver, IDE, RC, GRid.
+          IDE= Integrated development environment
+          Selenium Grid= Firefox plugin
+          Selenium WebDriver--->WE USE THIS=>INTERFACE, TESTING TOOL, OPEN SOURCE TOOL(NO COST)
+                                WHICH ALLOWS US US TO PERFORM ACTIONS ON A WEB APPLICATION.
+          Selenium RC=Remote Control
+
+ADVANTAGES OF SELENIUM WEBDRIVER:
+           Open sourse tool.
+           Works with different browsers and supports cross browsing testing
+           OS independent iOS, Windows, Linux
+           Works with different programming languages, java, javascripts, ruby ,pyton
+
+DISADVANTAGES OF SELENIUM WEBDRIVER:
+           Cannot test desktop applications
+           No technical support
+           Does not provide reports
+           Can not test images, videos, captcha(robot or not)
+
+get(); vs navigate();
+           navigate(); gives us more option back forwards and refresh the page.
+           get(); WAITS for the page to fully load whereas navigate(); WILL NOT wait for this.
+           get(); WILL NOT keep the history of the browser whereas navigate(); WILL//history bar
+
+close(); vs quit();
+           close (); close the current tab
+           quit(); close the whole browser
+
+fullscreen();  vs maximize();
+           maximize(); will maximize the browser and you will be able to se the control panel(back, forward, bookmarks,url tab)
+           fullscreen() will maximize the whole web page
+

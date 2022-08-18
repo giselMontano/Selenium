@@ -1,0 +1,50 @@
+SELENIUM CLASS7
+
+HANDELING MULTIPLE WINDOWS (TABS):
+In order to handle multiple windows we will be using:
+getWindowHandle()
+getWindowHandles()
+
+WindowHandle:
+It is a unique ID that holds the address of the window or tab,
+It is approximately a 40 alphanumeric character ID
+
+The original page where you navigate will be called "parent handle"
+and the additional tab open afterwards will be called "child handle"
+
+Most of the time when you interact with links they will open a new tab or a window
+=====================================================================================
+SYNCHRONIZATION: Process of bringing two o more component to the same speed level.
+in this case we are bringing our script and page load to the saem speed level.
+
+Thread.sleep()-->static wait/unconditional wait
+
+TYPES OF SELENIUM WAITS:
+Implicit wait
+Explicit wait
+Fluent wait
+
+IMPLICIT WAIT: 20 seconds wait if it finds the elements in less time will ignore the rest of the wait time left
+It tells the web driver to wait until certain amount of time before throwing an exception/error
+it will only be written once and will be applied to the whole session of the execution
+We can say the implicit wait  is a global wait.
+
+IMPLICIT wait works with findElement() method
+
+IMPLICIT WAIT is usually set for 20 sec. If your element is found in any time between the given time the
+remaining time will be ignored and your script will move on to the next line or to the next step.
+If the element is not found in the given time, ONLY then you will get an exception.
+
+HW
+Go to https://demoqa.com/browser-windows
+click on New Tab and print the text from new tab in the console
+click on New Window and print the text from new window in the console
+click on New Window Message and print the text from new window in the console
+Verify (compare) the titles for each page
+Print out the title of the all pages
+
+HW
+navigate to http://www.uitestpractice.com/Students/Contact
+click on the link
+get text
+print out in the console

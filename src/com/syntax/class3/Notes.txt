@@ -1,0 +1,89 @@
+SELENIUM CLASS 3
+
+WHY DO WE NEED XPATH AND CSS SELECTOR?
+     Developers may not provide all the locators in html.
+
+ADVANTAGES:
+     By using xpath ans css we can identify elements with any given attribute.
+     We can identify if the element is unique or not.
+
+WHAT IS AN XPATH?
+     It is a full address
+     Xpath is like a query language which helps us to identify elements unique on the web page.
+
+
+WEB USING
+http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
+https://www.facebook.com/
+
+
+TYPES OF XPATH: command=f  inside the DOM
+  1)Absolute xpath(NO COMMON USED)-->Starts from the starting note of the html
+                     It always starts with a single slash  /
+                     e.g. /html/body/div/div/div.........so on until you find the element you're looking for.
+
+  2)Relative xpath--> Starts from any note in html
+                      It will always starts with double slash(//)
+
+                       Syntax for relative xpath:
+                            //tag-name[@attribute = 'attribute value ']
+                       e.g. //input[@id= 'email']
+
+        2.1) Identify elements by its text:
+        For buttons or texts present in the window
+               //tag-name[text() = 'text value']
+          e.g. //a[text() = 'Create new account']
+          e.g. //h2[text()='Connect with friends and the world around you on Facebook.']
+
+        *2.2) Identify elements by using contains method:
+         When you have long attributed values case-sensitive
+         also this helps when you have numerical values in id
+         you can only put one part without numbers to identify.
+
+             //tag-name[contains(@attribute, 'partial attribute value')
+        e.g. //input[contains(@placeholder,'Email')]
+
+        Identify elements by its text, using contains method
+        e.g. //h2[contains(text(), 'friends')]
+
+        2.3)starts-with will identify elements by its partial starting value:
+            //tag-name[starts-with(@attribute, 'partial starting attribute value')]
+        e.g //input[starts-with(@aria-label, 'Email')]
+
+ ends-with was used in xpath 1.0, we are using 2.0 and this method is not available
+
+ ADVANCE XPATH:
+ Is based on parent and child, sibling relationships
+ identifying elements by the fallowing sibling
+ When you don't have any unique attribute to be located
+
+     //tag-name[@attribute = 'attribute value']/fallowing-sibling::tag-name
+e.g. //input[@id ='calFromDate']/fallowing-sibling::img
+DOESN'T MATTER THE POSITION OF THE SIBLINGS
+e.g. //label[@for ='leavelList_calFromDate']/fallowing-sibling::img
+
+IDENTIFY ELEMENTS BY PRECEDING SIBLINGS:
+from down-->up sibling identify
+     //tag-name[@attribute = 'attribute value']/preceding-sibling::sibling tag-name
+     Text we don't use @
+e.g. //span[text()='& Orders']/preceding-sibling::span
+
+IDENTIFY ELEMENTS BY ITS PARENT:
+//tag-name[@attribute ='attribute value']/parent::parent tag-name
+//span[text()='& Orders']/parent::a
+
+IDENTIFY ELEMENTS BY ITS ANCESTORS:
+Everything above parent is considered as an ancestor
+//input[@id='email']/ancestor::div
+
+RARELY USE BUT HELPFUL->IDENTIFY ELEMENTS BY ITS INDEX(not common)
+(//img[@class ='ui-datapicker-trigger'])[2]
+
+HW
+Navigate to http://syntaxprojects.com
+Click on start practicing
+click on simple form demo
+enter any text on first text box
+click on show message
+quit the browser
+

@@ -1,0 +1,22 @@
+SELENIUM CLASS 12
+
+
+PAGE OBJECT MODEL POM:
+ It is a design pattern which allows us to enhance the maintenance and reduce code duplication
+
+ADVANTAGE OF POM
+    1) Code reusablility
+    2) Code maintainability
+    3) Object repository
+    4) Readability
+
+HOW TO IMPLEMENT
+     1) POM without PageFactory
+     2) POM with PageFactory
+
+PageFactory is a class which allows us to interact with stored elements in each class
+Each and every page will have its own test
+
+BASE CLASS-> PARENT CLASS
+COMMON METHODS-> EXTENDS FROM BASE CLASS
+LOGIN PAGE-> EXTENDS FROM COMMON METHODS

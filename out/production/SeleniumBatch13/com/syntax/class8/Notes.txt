@@ -1,0 +1,63 @@
+SELENIUM CLASS 8
+
+IMPLICIT WAIT: GLOBAL WAIT.
+Wait fore some amount of time before throwing an exception, it needs to find an element within that time frame.
+once found it, it goes to the rest of the code.
+usually set for 20 sec
+
+Will be applied for find element() methods
+
+EXPLICIT WAIT OR WEB-DRIVER WAIT: WAIT FOR CERTAIN CONDITIONS one for each condition.
+Wait for condition to be met.
+Is used to tell the web-driver to wait for a certain condition
+before throwing an exception for a specific condition.
+
+Explicit wait works with "ExpectedCondition class" from selenium that waits until
+a certain condition is met or the given time is achieved.
+
+* <--CAN IDENTIFY ANY TAG NAME IN XPATH IS A WILD CARD
+//button[@name='websubmit']
+//*[@name='websubmit']
+
+FLUENT WAIT -- GLOBAL WAIT-->outdated
+It is used to tell the web-driver to wait for certain condition as well as its frequency before throwing an exception
+
+IMPLICIT WAIT=> We wait to locate the elements
+EXPLICIT WAIT=> Wait until certain condition is met
+FLUENT WAIT=> We set timeout, and pulltime and ignore needed exceptions in the give time period
+===================================================================================================
+XPATH IS A MUST FOR THIS
+WEB-TABLES:<tr>
+Are elements on the web page, which are constructed by header, row and columns
+
+TYPES OF WEBTABLES:
+1.Static webtable
+2.Dynamic webtable
+
+WEBTABLE consist of different sections of parts:
+<table>
+  <thead>
+    <tr>--row
+       <th></th> -- colum data or heading data
+    </tr>
+  </table>
+  <tbody>
+      <tr>
+        <td></td>--table data
+     </tr>
+  </tbody>
+</table>
+
+HW1
+go to https://the-internet.herokuapp.com/dynamic_controls
+click on checkbox and click on remove
+verify the text
+click on enable verify the textbox is enabled
+enter text and click disable
+verify the textbox is disabled
+
+HW2
+create a package and name it as utils
+create a class and name as CommonMethods
+create functions (methods) to open and quit the browsers
+open method has to accept a url as a parameter
